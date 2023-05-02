@@ -2,6 +2,8 @@
 
 const int UM = 1;
 void subconjunto(int *V, int qtd_sub );
+int uniao(int mA, int mB);
+int intersec(int mA, int mB);
 
 int main(){
 
@@ -41,3 +43,23 @@ int main(){
         mask = 0;
       }
 }
+
+int uniao(int mA, int mB)
+{
+    int uniao;
+
+    uniao = mA | mB;
+
+    return uniao;
+}
+
+int intersec(int mA, int mB)
+{
+    int intersecao;
+
+    intersecao = mA & mB;
+
+    return intersecao;
+}
+
+
